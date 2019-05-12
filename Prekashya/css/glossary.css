@@ -1,0 +1,139 @@
+body{
+	padding:0;
+	margin: 0;
+}
+/*body{
+	margin:0;
+	padding:0;*/
+.main{
+	display: grid;
+	grid-template-columns: 300px auto;
+}
+.nav-bar{
+	/*color for the nav-bar*/
+	background-color: lightgrey;
+}
+.nav-bar h1{
+	margin-top: 32%;
+	padding-top: 2%;
+	text-align: center;
+}
+.nav-bar h1 a{
+	text-decoration: none;
+}
+.content{
+	display: flex;
+	flex-direction: row;
+	padding:3% 3% 0% 3%;
+}
+
+.content img{
+	padding:2% 3% 0% 3%;
+	width: 400px;
+	height: 400px;
+}
+.content-text {
+	display: flex;
+	flex-direction: row;
+}
+.text1{
+	/*for the text1*/
+	border: 2px solid;
+	width: 165%;
+	text-align: center;
+	margin-left: 6%;
+	height: 200px;
+}
+.text2{
+	/*for the text2*/
+	border: 2px solid;
+	width: 165%;
+	text-align: center;
+	margin-left: 6%;
+	margin-right: 13%;
+	height: 200px;
+}
+.content-text p{
+	/*conatin for p*/
+	text-align: justify;
+}
+.main-contentair{
+	background-color: #fff;
+}
+.footer{
+	bottom: 0;
+	grid-column: 1/ span 2;
+	background-color: #fff;
+}
+.footer ul{
+	max-width: 640px;
+	margin: 4% auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer ul li{
+	list-style: none;
+}
+@media screen and (max-width: 700px){
+	/*responsive for the page*/
+	.main{
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.nav-bar{
+	    grid-row: 1 / 2;
+ 	    background-color:  #ffe6e6;
+    }
+    .main-contentair{
+    	order: 1;
+    }
+    .nav-bar{
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-around;
+    }
+    .nav-bar h1{
+	   margin-top: 2%;
+	   padding-top: 2%;
+    }
+    .nav-bar h1 a{
+    	text-align: center;
+    	padding:4%;
+    	margin: 3%;
+    }
+    .content{
+	display: flex;
+	flex-direction: row;
+	padding:3%;
+    }
+    .content img{
+	padding:2% 3% 0% 3%;
+	width: 50%;
+	margin-bottom: 0;
+    }
+    .text1{
+	border: 2px solid;
+	width: 300%;
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+	margin-left: 6%;
+	height: 310px;
+}
+    .text2{
+	   border: 2px solid;
+	   width: 300%;
+	   text-align: center;
+	   margin-left: 3%;
+	   margin-right: 0%;
+	   padding-right: 0;
+	   height: 320px;
+}
+    .footer{
+    	order: 2;
+    }
+
+}
+}
